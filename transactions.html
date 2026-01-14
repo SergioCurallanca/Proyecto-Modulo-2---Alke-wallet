@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head lang="es">
+    <meta charset="utf-8">
+    <title>Alke wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/margin_tamaños.css">
+    <link rel="stylesheet" href="styles/atributos_texto.css">
+</head>
+<body>
+    <header class="d-flex justify-content-center">
+        <h1>Alke wallet</h1>
+    </header>
+    <div class="container d-flex justify-content-center">
+    <nav class="navbar navbar-light navbar-expand-lg d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a href="menu.html" id="menu" class="nav-link">Menu</a></li>
+            <li class="nav-item active"><a href="deposit.html" id="depositar" class="nav-link">Depositar</a></li>
+            <li class="nav-item active"><a href="sendmoney.html" id="transferencias" class="nav-link">Transferencias</a></li>
+        </ul>
+    </nav>
+    </div>
+    <section class="container d-flex justify-content-center">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Tus ultimas transacciones</h2>
+            </div>
+            <div class="card-body">
+                <table id="tabla_registro_transacciones" class="table table-responsive table-stripped">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Apodo</th>
+                            <th>Banco</th>
+                            <th>Número cuenta</th>
+                            <th>Rut</th>
+                            <th>Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        
+        
+    </section>
+    <script src="script/transacciones/tabla_registro_transacciones.js"></script>
+
+
+</body>

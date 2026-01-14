@@ -1,0 +1,17 @@
+.card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: min(100%, 1000px);    
+}
+nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: min(100%, 1200px);
+    background-color: aliceblue;
+}
+.card-body > * {
+    margin:1rem;
+}
+form > * {
+    margin:0.5rem;
+}
