@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head lang="es">
+    <meta charset="utf-8">
+    <title>Alke wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/margin_tamaños.css">
+    <link rel="stylesheet" href="styles/atributos_texto.css">
+</head>
+<body>
+    <header>
+        <h1>Alke wallet</h1>
+    </header>
+    <div class="container d-flex justify-content-center">
+    <nav class="navbar navbar-light navbar-expand-lg d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a href="menu.html" id="menu" class="nav-link">Menu</a></li>
+            <li class="nav-item active"><a href="sendmoney.html" id="transferencias" class="nav-link">Transferencias</a></li>
+            <li class="nav-item active"><a href="transactions.html" id="ultimas_transacciones" class="nav-link">Ultima transacciones</a></li>
+        </ul>
+    </nav>
+    </div>
+    <section class="container d-flex justify-content-center">
+        <div class="card">
+            <div class="card-header">
+                <h2>Depositos</h2>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Deposita a tu billetera</h2>
+                <form id="form_deposito">
+                <div class="mb-3">
+                <label class="form-label">Cuanto deseas depositar?</label><input type="number" id="monto_deposito" class="form-control">
+                </div>
+                <button type="submit">Depositar</button>
+                <p id="mensaje_campo_vacio" class="form-text"></p>
+            </form>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script/deposit/formulario_deposito.js"></script>
+
+
+
+</body>
